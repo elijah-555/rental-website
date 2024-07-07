@@ -199,6 +199,10 @@ nav {
   font-weight: 300;
 }
 
+.btn__link--white {
+  color: #fff;
+}
+
 .css-w8txck {
   padding-left: 12px;
 }

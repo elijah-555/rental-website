@@ -7,17 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a588e7e54d.js" crossorigin="anonymous"></script>
+    <script src="https://app.lodgify.com/book-now-box/stable/renderBookNowBox.js" defer></script>
 
 </head>
 
 <body>
     <nav>
-        <ul class="nav__link--list">
-            <li class="nav__link"><a class="nav__link--anchor" href="#home">Home</a></li>
-            <li class="nav__link"><a class="nav__link--anchor" href="about.html">About Us</a></li>
-            <li class="nav__link"><a class="nav__link--anchor" href="#properties">Properties</a></li>
-            <li class="nav__link"><a class="nav__link--anchor" href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav__links">
+            <div class="nav__logo">
+                <figure class="logo__wrapper">
+                    <img class="logo" src="assets/logo-white.png" alt="">
+                </figure>
+            </div>
+            <div class="links__right">
+                <ul class="nav__link--list">
+                    <li class="nav__link"><a class="nav__link--anchor" href="#home">Home</a></li>
+                    <li class="nav__link"><a class="nav__link--anchor" href="about.html">About Us</a></li>
+                    <li class="nav__link"><a class="nav__link--anchor" href="#properties">Properties</a></li>
+                    <li class="nav__link"><a class="nav__link--anchor"
+                            href="mailto:therelaxingretreatllc@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <main>
         <section id="home">
@@ -41,7 +52,7 @@
             <div class="row row__info">
                 <div class="info__header">
                     <h2 alt="Vacation Rentals alt=" Vacation Rentals" class="info__title">Unmatched Vacation Rentals &
-                        Services in City, Florida</h2>
+                        Services in Richmond, Virginia</h2>
                     <p class="info__para">Take the work and worry out of finding a vacation home and spend more time
                         actually enjoying your stay! We would love to have you as a part of our business and will
                         provide
@@ -68,17 +79,73 @@
                         <figure class="icon__wrapper">
                             <i class="fa-solid fa-envelope"></i>
                         </figure>
-                        <button class="about__btn">Contact Us</button>
+                        <button class="about__btn">
+                            <a class="btn__link" href="mailto:therelaxingretreatllc@gmail.com">
+                                Contact Us
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="row row__widget"></div>
+            <style>
+                :root {
+                    --ldg-bnb-background: #ffffff;
+                    --ldg-bnb-border-radius: 0.42em;
+                    --ldg-bnb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+                    --ldg-bnb-padding: 14px;
+                    --ldg-bnb-input-background: #ffffff;
+                    --ldg-bnb-button-border-radius: 3.58em;
+
+                    --ldg-bnb-color-primary: #333333;
+                    --ldg-bnb-color-primary-lighter: #999999;
+                    --ldg-bnb-color-primary-darker: #1a1a1a;
+                    --ldg-bnb-color-primary-contrast: #ffffff;
+                    --ldg-component-calendar-cell-selection-bg-color: #333333;
+                    --ldg-component-calendar-cell-selection-color: #ffffff;
+                    --ldg-component-calendar-cell-selected-bg-color: #999999;
+                    --ldg-component-calendar-cell-selected-color: #ffffff;
+                    --ldg-bnb-font-family: inherit;
+                }
+
+                #lodgify-book-now-box {
+                    width: 100%;
+                }
+            </style>
+            <div class="widget" id="lodgify-book-now-box" data-rental-id="undefined" data-website-id="527313"
+                data-slug="cj-burgess" data-language-code="en" data-new-tab="true" data-version="stable"
+                data-check-in-label="Arrival" data-check-out-label="Departure" data-guests-label="Guests"
+                data-guests-singular-label="{{NumberOfGuests}} guest"
+                data-guests-plural-label="{{NumberOfGuests}} guests" data-location-input-label="Location"
+                data-total-price-label="Total price:"
+                data-select-dates-to-see-price-label="Select dates to see total price"
+                data-minimum-price-per-night-first-label="From" data-minimum-price-per-night-second-label="per night"
+                data-book-button-label="Book Now"></div>
+
 
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Relaxing Retreats LLC.</p>
+        <div class="footer__about">
+            <p class="footer__para">Contact Information</p>
+            <p class="footer__para">Business Hours: 9:00am - 5:00pm, Monday - Friday</p>
+            <p class="footer__para">
+                <a class="footer__link" href="tel:804-592-6396">
+                    Phone Number: +1 (804-592-6396)
+                </a>
+            </p>
+            <p class="footer__para">
+                <a class="footer__link" href="mailto:therelaxingretreatllc@gmail.com">
+                    E-mail Address: therelaxingretreatllc@gmail.com
+                </a>
+            </p>
+        </div>
+        <figure class="footer__logo--wrapper">
+            <a href="#">
+                <img class="footer__logo" src="./assets/logo-white.png" alt="">
+            </a>
+        </figure>
+        <p class="footer__cr">&copy; 2024 Relaxing Retreats LLC.</p>
     </footer>
 </body>
 

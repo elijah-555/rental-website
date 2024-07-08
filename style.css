@@ -424,7 +424,7 @@ footer {
 
 /* SMALL PHONES */
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
 
   nav {
     padding: 24px;
@@ -471,4 +471,5 @@ footer {
   .about__para {
     width: 100%;
   }
+  
 }

@@ -73,7 +73,6 @@ nav {
 }
 
 .links__right {
- 
 }
 
 .nav__link--anchor {
@@ -246,45 +245,9 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 728px) {
-
-  .row__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .css-1n6bo {
-    margin-top: 0;
-  }
-
-
-  .info__header {
-    width: 60%;
-    margin-top: 24px;
-  }
-
-  .info__links {
-    flex-direction: column;
-    width: 60%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 48px;
-  }
-
-  .link {
-    margin-bottom: 48px;
-  }
-
-  .link:last-child {
-    margin-bottom: 32px;
-  }
-}
-
-
 /* ABOUT PAGE */
 
-.row__about{
+.row__about {
   display: flex;
   justify-content: center;
 }
@@ -309,4 +272,152 @@ footer {
   margin-bottom: 12px;
   font-size: 32px;
   font-weight: 400;
+}
+
+/* TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 728px) {
+  .row__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .css-1n6bo {
+    margin-top: 0;
+  }
+
+  .info__header {
+    width: 60%;
+    margin-top: 24px;
+  }
+
+  .info__links {
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  .link {
+    margin-bottom: 48px;
+  }
+
+  .link:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+/* PHONES */
+
+@media (max-width: 640px) {
+  /* LANDING */
+
+  .nav__link--anchor {
+    font-size: 20px;
+  }
+
+  .logo__wrapper {
+    max-width: 72px;
+  }
+
+  .overlay__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+  }
+
+  .img__title {
+    width: 120%;
+    margin-bottom: 4px;
+  }
+
+  .img__para {
+    margin: 72px 0;
+  }
+
+  .booking__btn {
+    width: 80%;
+    font-size: 24px;
+    padding: 24px 0;
+  }
+
+  /* INFO */
+
+  .row__info {
+
+  }
+
+  .info__header {
+    align-items: center;
+  }
+
+  .info__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .info__para {
+    font-size: 22px;
+  }
+
+  .link {
+    width: 50%;
+  }
+
+.fa-solid {
+  font-size: 48px;
+}
+
+  .about__btn {
+    padding: 16px 20px;
+    margin-top: 12px;
+  }
+
+  .btn__link {
+    font-size: 20px;
+  }
+
+  .css-1n6bo {
+    width: 80%;
+    padding: 32px 24px;
+  }
+
+  .footer__link {
+    font-size: 20px;
+  }
+
+  .footer__para {
+    font-size: 20px;
+  }
+
+  .footer__cr {
+    font-size: 20px;
+  }
+
+  .footer__logo--wrapper {
+   max-width: 200px;
+  }
+
+  .footer__logo {
+    width:100%;
+  }
+
+  /* ABOUT */
+
+  .about__title {
+    margin: 48px 0;
+  }
+
+  .about__para {
+    font-size: 24px;
+    width: 75%;
+  }
+
+  .about__para:last-child {
+    margin-bottom: 48px;
+  }
 }

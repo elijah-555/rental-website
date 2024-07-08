@@ -81,6 +81,14 @@ nav {
   transition: opacity 300ms ease;
 }
 
+.nav__link--anchor-properties:hover {
+  cursor: not-allowed;
+}
+
+.btn__link--properties:hover {
+  cursor: not-allowed;
+}
+
 .nav__link--anchor:hover {
   opacity: 50%;
 }
